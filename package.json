@@ -2,16 +2,14 @@
     "name": "shantanu",
     "version": "0.0.1",
     "author": {
-        "name": "Shantanu",
-        "url":
+        "name": "Shantanu"
     },
     "description": "A custom description for My Theme",
     "repository": "git@git.yapapaya.in:yapapaya/my-theme/",
     "bugs": "git@git.yapapaya.in:yapapaya/my-theme/issues/",
     "devDependencies": {
-        "grunt": "^0.4.5",
+        "grunt": "^1.0.1",
         "grunt-cli": "~0.1.9",
-        "load-grunt-tasks": "~0.4.0",
         "grunt-contrib-watch": "~0.6.1",
         "grunt-contrib-sass": "~0.7.3",
         "grunt-autoprefixer": "~0.7.2",

@@ -1,17 +1,17 @@
-# Copyright (C) 2017 Automattic
+# Copyright (C) 2017 Shantanu
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
 "Project-Id-Version: shantanu 1.0.0\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/tags/_s\n"
-"POT-Creation-Date: 2016-12-23 16:00+0100\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/support/theme/style\n"
+"POT-Creation-Date: 2017-11-22 08:54:58+00:00\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "PO-Revision-Date: 2017-MO-DA HO:MI+ZONE\n"
-"Last-Translator:\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"X-Generator: grunt-wp-i18n 0.5.4\n"
+"X-Generator: grunt-wp-i18n 0.4.9\n"
 
 #: 404.php:17
 msgid "Oops! That page can&rsquo;t be found."
@@ -37,7 +37,7 @@ msgstr ""
 msgid "One thought on &ldquo;%1$s&rdquo;"
 msgstr ""
 
-#: comments.php:67
+#: comments.php:63
 msgid "Comments are closed."
 msgstr ""
 
@@ -67,11 +67,11 @@ msgstr ""
 msgid "Add widgets here."
 msgstr ""
 
-#: header.php:24
+#: header.php:25
 msgid "Skip to content"
 msgstr ""
 
-#: header.php:45
+#: header.php:46
 msgid "Primary Menu"
 msgstr ""
 
@@ -99,6 +99,17 @@ msgstr ""
 #. translators: %s: Name of current post. Only visible to screen readers
 msgid "Edit <span class=\"screen-reader-text\">%s</span>"
 msgstr ""
+
+#: inc/woocommerce.php:227
+msgid "View your shopping cart"
+msgstr ""
+
+#: inc/woocommerce.php:229
+#. translators: number of items in the mini cart.
+msgid "%d item"
+msgid_plural "%d items"
+msgstr[0] ""
+msgstr[1] ""
 
 #: search.php:21
 #. translators: %s: search query.
@@ -136,11 +147,11 @@ msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
 msgstr ""
 
 #. Theme Name of the plugin/theme
-msgid "_s"
+msgid "shantanu"
 msgstr ""
 
 #. Theme URI of the plugin/theme
-msgid "https://underscores.me/"
+msgid "https://Shantanucores.me/"
 msgstr ""
 
 #. Description of the plugin/theme
@@ -152,11 +163,7 @@ msgid ""
 msgstr ""
 
 #. Author of the plugin/theme
-msgid "Automattic"
-msgstr ""
-
-#. Author URI of the plugin/theme
-msgid "https://automattic.com/"
+msgid "Shantanu"
 msgstr ""
 
 #: comments.php:40

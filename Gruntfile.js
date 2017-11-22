@@ -2,17 +2,10 @@
 
 module.exports = function( grunt ) {
 
-	// load all tasks
-	require( 'load-grunt-tasks' )( grunt, {
-		pattern: '*',
-		scope: 'devDependencies',
-		requireResolution: true
-	} );
-
 	grunt.initConfig( {
 		pkg: grunt.file.readJSON( 'package.json' ),
 		watch: {
-			files: [ 'scss/*.scss' ],
+			files: [ 'sass/*.scss' ],
 			tasks: 'sass:dev',
 			options: {
 				livereload: true,
@@ -24,7 +17,7 @@ module.exports = function( grunt ) {
 					style: 'expanded'
 				},
 				files: {
-					'style.css': 'scss/style.scss',
+					'style.css': 'sass/style.scss',
 				}
 			},
 			release: {
@@ -32,7 +25,7 @@ module.exports = function( grunt ) {
 					style: 'expanded'
 				},
 				files: {
-					'style.css': 'scss/style.scss',
+					'style.css': 'sass/style.scss',
 				}
 			}
 		},
@@ -80,7 +73,15 @@ module.exports = function( grunt ) {
 		}
 
 	} );
-	grunt.registerTask( 'bootstrap', [ 'wpBootStrap' ] );
+
+	grunt.loadNpmTasks( 'grunt-contrib-watch' );        
+	grunt.loadNpmTasks( 'grunt-contrib-sass' );
+	grunt.loadNpmTasks( 'grunt-autoprefixer' );
+	grunt.loadNpmTasks( 'grunt-csscomb' );
+	grunt.loadNpmTasks( 'grunt-contrib-concat' );
+	grunt.loadNpmTasks( 'grunt-contrib-uglify' );
+	grunt.loadNpmTasks( 'grunt-wp-i18n' );
+        
 	grunt.registerTask( 'default', [ 'sass:dev' ] );
 	grunt.registerTask( 'release', [
 		'sass:release',
