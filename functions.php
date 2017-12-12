@@ -129,6 +129,68 @@ function shantanu_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'shantanu_scripts' );
 
+function shantanu_header_background_color_customizer_css() {
+    ?>
+    <style type="text/css">
+        header.site-header { background-color: <?php echo get_theme_mod( 'header_background_color' ); ?>; }
+    </style>
+    <?php
+}
+add_action( 'wp_head', 'shantanu_header_background_color_customizer_css' );
+
+function shantanu_footer_background_color_customizer_css() {
+    ?>
+    <style type="text/css">
+        footer.site-footer { background-color: <?php echo get_theme_mod( 'footer_background_color' ); ?>; }
+    </style>
+    <?php
+}
+add_action( 'wp_head', 'shantanu_footer_background_color_customizer_css' );
+
+function shantanu_main_background_color_customizer_css() {
+    ?>
+    <style type="text/css">
+        .content-area { background-color: <?php echo get_theme_mod( 'main_background_color' ); ?>; }
+    </style>
+    <?php
+}
+add_action( 'wp_head', 'shantanu_main_background_color_customizer_css' );
+
+function shantanu_sidebar_background_color_customizer_css() {
+    ?>
+    <style type="text/css">
+        aside.widget-area { background-color: <?php echo get_theme_mod( 'sidebar_background_color' ); ?>; }
+    </style>
+    <?php
+}
+add_action( 'wp_head', 'shantanu_sidebar_background_color_customizer_css' );
+
+function shantanu_link_color_customizer_css() {
+    ?>
+    <style type="text/css">
+        a { color: <?php echo get_theme_mod( 'link_color' ); ?>; }
+    </style>
+    <?php
+}
+add_action( 'wp_head', 'shantanu_link_color_customizer_css' );
+
+function shantanu_link_visited_color_customizer_css() {
+    ?>
+    <style type="text/css">
+        a:visited { color: <?php echo get_theme_mod( 'link_visited_color' ); ?>; }
+    </style>
+    <?php
+}
+add_action( 'wp_head', 'shantanu_link_visited_color_customizer_css' );
+
+function shantanu_link_hover_color_customizer_css() {
+    ?>
+    <style type="text/css">
+        a:hover { color: <?php echo get_theme_mod( 'link_hover_color' ); ?>; }
+    </style>
+    <?php
+}
+add_action( 'wp_head', 'shantanu_link_hover_color_customizer_css' );
 /**
  * Implement the Custom Header feature.
  */

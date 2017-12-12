@@ -258,6 +258,47 @@ th {
 }
 
 /*--------------------------------------------------------------
+# Grid
+--------------------------------------------------------------*/
+.site {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas: "header" "main" "sidebar" "footer";
+  grid-gap: 3rem 1rem;
+}
+
+@media (min-width: 480px) {
+  .site {
+    grid-template-columns: repeat(2, auto) 25%;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "header header header" "main main sidebar" "footer footer footer";
+  }
+}
+header.site-header {
+  grid-area: header;
+}
+
+div.content-area {
+  grid-area: main;
+}
+
+aside.widget-area {
+  grid-area: sidebar;
+}
+
+footer.site-footer {
+  grid-area: footer;
+}
+
+header.site-header,
+div.content-area,
+aside.widget-area,
+footer.site-footer {
+  padding: 1rem 3rem;
+}
+
+/*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
 body,
@@ -266,8 +307,8 @@ input,
 select,
 optgroup,
 textarea {
-  color: #404040;
-  font-family: sans-serif;
+  color: #111111;
+  font-family: Lora, serif;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5;
@@ -275,6 +316,39 @@ textarea {
 
 h1, h2, h3, h4, h5, h6 {
   clear: both;
+  font-family: Nunito, sans-serif;
+}
+
+h6 {
+  font-size: 16px;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+h5 {
+  font-size: 16px;
+  font-size: 1rem;
+  font-style: italic;
+}
+
+h4 {
+  font-size: 18px;
+  font-size: 1.125rem;
+}
+
+h3 {
+  font-size: 20px;
+  font-size: 1.25rem;
+}
+
+h2 {
+  font-size: 24px;
+  font-size: 1.5rem;
+}
+
+h1 {
+  font-size: 32px;
+  font-size: 2rem;
 }
 
 p {
@@ -323,6 +397,16 @@ mark, ins {
 
 big {
   font-size: 125%;
+}
+
+.site-title {
+  font-size: 32px;
+  font-size: 2rem;
+}
+
+.site-description {
+  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 /*--------------------------------------------------------------
@@ -484,13 +568,13 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-  color: royalblue;
+  color: #6A6A76;
 }
 a:visited {
-  color: purple;
+  color: #7e7e8c;
 }
 a:hover, a:focus, a:active {
-  color: midnightblue;
+  color: #4a4e5c;
 }
 a:focus {
   outline: thin dotted;
@@ -685,6 +769,42 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
+body {
+  background-color: #D3D3D3;
+}
+
+.content-area {
+  background-color: #D3D3D3;
+}
+
+aside.widget-area {
+  background-color: #D3D3D3;
+}
+
+/*--------------------------------------------------------------
+# Site-Header
+--------------------------------------------------------------*/
+header.site-header {
+  background-color: #757575;
+}
+
+.site-title {
+  font-size: 32px;
+  font-size: 2rem;
+}
+
+.site-description {
+  font-size: 24px;
+  font-size: 1.5rem;
+}
+
+/*--------------------------------------------------------------
+# Site-Footer
+--------------------------------------------------------------*/
+footer.site-footer {
+  background-color: #B8B8B8;
+}
+
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
@@ -822,5 +942,8 @@ object {
 .gallery-caption {
   display: block;
 }
+
+/**
+*/
 
 /*# sourceMappingURL=style.css.map */

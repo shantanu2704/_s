@@ -1,0 +1,11 @@
+header.site-header {
+    background-color: $header;
+}
+
+.site-title {
+                @include font-size(2);
+}
+
+.site-description {
+                @include font-size(1.5);
+}
